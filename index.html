@@ -8,56 +8,84 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <div class="header">    <!-- row -->
-        <h4>ForwardThinkers</h4>
-        <ul class="headright">
-            <li><a href="https://www.google.com/">Google</a></li>
-            <li><a href="https://www.amazon.com/">Amazon</a></li>
-            <li><a href="https://www.netflix.com/">Netflix</a></li>
-        </ul>
-    </div>
-
-    <div class="leftside">
-        <div class="logo">
-            logo
-        </div>
-
-        <div class="credit">
-            credit
+    <div class="navy">
+        <div class="header">    <!-- row -->
+            <h4>ForwardThinkers</h4>
+            <ul class="headright">
+                <li><a href="https://www.google.com/">Google</a></li>
+                <li><a href="https://www.amazon.com/">Amazon</a></li>
+                <li><a href="https://www.netflix.com/">Netflix</a></li>
+            </ul>
         </div>
     </div>
 
-    <div class="rightside">
-        <div class="focus">
-            <div class="text"></div>
-            <form action="" method="post">
-                <fieldset>
-                    <legend>Let's do this!</legend>
-                    <div>
-                        <label for="firstname">First Name: </label>
-                        <input type="text" id="firstname" name="firstName">
-                    </div>
+    <div class="body">
+        <div class="leftside">
+            <div class="logo">
+                <h4>e Sex</h4>
+            </div>
+    
+            <div class="credit">
+                Photo by herby 
+            </div>
+        </div>
+    
+        <div class="rightside">
+            <!-- <div class="focus"> -->
 
-                    <div>
-                        <label for="lastname">Last Name: </label>
-                        <input type="text" id="lastname" name="lastName">
-                    </div>
-
-                    <div>
-                        <label for="email">Email: </label>
-                        <input type="email" id="email" name="email">
-                    </div>
-
-                    <div>
-                        <label for="phonenumber">Phone Number:</label>
-                        <input type="tel" id="phonenumber" name="phoneNumber">
-                    </div>
-                </fieldset>
-
-                <div class="outer">
-                    outer
+                <div class="text">
+                    This is not a real online service! You know you need something like this in you life to help you realize your deepest dreams. Sign up <i>now</i> to get started.
                 </div>
-            </form>
+
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>Let's do this!</legend>
+                        <div class="boxes">
+                            <div class="left">
+                                <div>
+                                    <label for="firstname">FIRST NAME</label>
+                                    <input type="text" id="firstname" name="firstName" minlength="2" maxlength="20" placeholder="Johnny" required>
+                                </div>
+            
+                                <div>
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" id="email" name="email" maxlength="30" placeholder="bustyasians@hotmail.com" required>
+                                </div>
+            
+                                <div>
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" id="password" name="password" placeholder="Enter password" minlength="8" maxlength="30" required>
+                                </div>
+                            </div>
+        
+                            <div class="right">
+                                <div>
+                                    <label for="lastname">LAST NAME</label>
+                                    <input type="text" id="lastname" name="lastName" minlength="2" maxlength="20" placeholder="Sins" required>
+                                </div>
+            
+                                <div>
+                                    <label for="phonenumber">PHONE NUMBER</label>
+                                    <input type="tel" id="phonenumber" name="phoneNumber" maxlength="12" placeholder="865-409-1021" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                                </div>
+            
+                                <div>
+                                    <label for="password">CONFIRM PASSWORD</label>
+                                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Enter password" minlength="8" maxlength="30" required>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                
+    
+                <div class="outer">
+                    <button type="button" onclick="submitForm()">Create Account</button>
+                    <div>
+                        Already have an account? <a href="#">Log in</a>
+                    </div>
+                </div>
+            <!-- </div> -->
         </div>
     </div>
 

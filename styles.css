@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('./Norse-Bold.otf') format('opentype');
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #f9faf8;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navy {
+    background-color: rgb(31, 41, 55);
+    display: flex;
+    flex-direction: column;
+    color: #f9faf8;
+    padding: 16px 164px 16px 164px;
+} 
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.headright {
+    display: flex;
+    gap: 16px;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    /* align-items: auto;
+    justify-content: auto; */
+    /* border: 1px solid goldenrod; */
+    height: 800px;
+    margin-bottom: 0px;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    border: 1px solid black;
+    background: url('https://imgs3.goodsmileus.com/image/cache/data/productimages/ScaleFigures/HatsuneMikuNTStyle_CasualWearVer/01_2305151347235853-1200x1200.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    background-size: clamp(790px, 200%, 1100px);
+}
+
+.logo {
+    margin-top: 4em;
+    width: 100%;
+    padding: 1em;
+    background: rgb(31 41 55 / 40%);
+    color: #f9faf8;
+    text-align: center;
+    font-size: 54px;
+}
+
+.credit {
+    position: absolute;
+    bottom: 1em;
+    color: #003aad;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.rightside {
+    flex: 2;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e8ec;
+    position: relative;
+    color: #1f2937;
+    font-family: 'Norse Bold', sans-serif;
+    font-size: 26px;
+    padding: .5em;
+}
+
+.rightside a {
+    color: rgb(31, 41, 55);
+    font-weight: 700;
+}
+
+.text {
+    margin: 32px;
+}
+
+form {
+    border: 2px solid gray;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.boxes {
+    display: flex;
+    justify-content: left;
+    padding: 0px 16px;
+    gap: 24px;
+    font-size: .5em;
+}
+
+.boxes div div {
+    display: flex;
+    flex-direction: column;
+    width: 24em;
+    margin: 32px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 300px;  /* Set the desired width */
+    height: 40px;  /* Set the desired height */
+    padding: 8px; /* Add padding for better spacing */
+    font-size: 18px; /* Adjust the font size */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 4px; /* Optional: Add rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.outer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 56px;
+    width: 100%;
+    font-size: .6em;
+}
+
+.outer div {
+    
+}
+
+button {
+    background-color: #3882f6;
+    align-self: flex-start;
+    border-radius: 8px;
+    color: #e5e7eb;
+    padding: 8px 32px;
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: 650;
+}
+
+input::placeholder {
+    color: gray;  /* Change the placeholder text color */
+    font-style: italic;  /* Change the placeholder text style */
+    font-size: 18px;  /* Change the placeholder text size */
+    opacity: .5;  /* Ensure full opacity */
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:placeholder-shown {
+    border-color: #e5e7eb;
+} 
+
+.footer {
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    color: #e5e7eb;
+    font-weight: 1;
+    font-size: 12px;
+}
